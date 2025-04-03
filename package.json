@@ -1,28 +1,5 @@
-{
-  "name": "puppeteer-proxy",
-  "version": "1.0.0",
-  "description": "A simple Puppeteer proxy server",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "^4.21.2",
-    "express-basic-auth": "^1.2.1",
-    "puppeteer": "^19.11.1"
-  },
-  "engines": {
-    "node": ">=14.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yourusername/railway-proxy.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yourusername/railway-proxy/issues"
-  },
-  "homepage": "https://github.com/yourusername/railway-proxy#readme"
+"dependencies": {
+  "express": "^4.17.1",
+  "puppeteer-core": "^19.0.0",
+  "chrome-aws-lambda": "^10.0.0"
 }
