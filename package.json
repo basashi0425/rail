@@ -1,17 +1,10 @@
 {
-  "name": "proxy-server",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
+    "install": "playwright install --with-deps",
     "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
- "puppeteer-core": "^10.1.0",  // ここを変更
-    "chrome-aws-lambda": "^10.0.0",
-    "express-basic-auth": "^1.1.0"
-  },
-  "engines": {
-    "node": "16.x"
+    "playwright": "^1.40.0"
   }
 }
