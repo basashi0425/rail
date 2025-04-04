@@ -1,11 +1,11 @@
 {
   "name": "captcha-cloak",
   "version": "1.0.0",
-  "description": "A private web proxy with CAPTCHA evasion using Playwright.",
+  "description": "Captcha-evading proxy using Playwright Chromium",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "postinstall": "npx playwright install --with-deps firefox"
+    "postinstall": "npx playwright install chromium"
   },
   "dependencies": {
     "express": "^4.18.2",
