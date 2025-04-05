@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>CaptchaCloak</title>
+  <style>
+    body {
+      font-family: "Helvetica", sans-serif;
+      text-align: center;
+      background: #f0f0f0;
+      padding: 50px;
+    }
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    img.logo {
+      width: 200px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      font-size: 16px;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/logo.png" alt="CaptchaCloak" class="logo">
+    <h2>CaptchaCloak - プロキシポータル</h2>
+    <% if (error) { %>
+      <div class="error"><%= error %></div>
+    <% } %>
+    <form method="POST" action="/browse">
+      <input type="password" name="password" placeholder="パスワード" required />
+      <input type="text" name="url" placeholder="アクセスするURL（例: https://example.com）" required />
+      <button type="submit">アクセス</button>
+    </form>
+  </div>
+</body>
+</html>
