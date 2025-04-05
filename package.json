@@ -1,17 +1,15 @@
 {
   "name": "captcha-cloak",
   "version": "1.0.0",
-  "description": "Captcha-evading proxy using Playwright Chromium",
+  "description": "CAPTCHA回避付きのシンプルプロキシ",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "npx playwright install chromium"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "playwright": "^1.41.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "playwright": "^1.42.1",
+    "ejs": "^3.1.9",
+    "body-parser": "^1.20.2"
   }
 }
